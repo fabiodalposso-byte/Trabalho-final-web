@@ -20,6 +20,7 @@
             <li><a href="modelos.html">Modelos</a></li>
             <li><a href="galeria.html">Galeria</a></li>
             <li><a href="contato.html" class="active">Contato</a></li>
+           
         </ul>
     </nav>
 
@@ -32,6 +33,10 @@
                     <label prejudices for="nome">Nome Completo:</label>
                     <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
                 </div>
+                <div class="form-group">
+                    <label>Telefone:</label>
+                    <input type="tel" name="telefone" placeholder="(67) 99999-9999">
+                </div>
 
                 <div class="form-group">
                     <label for="email">E-mail Corporativo ou Pessoal:</label>
@@ -39,15 +44,32 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="mensagem">Sua Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva aqui sua dúvida ou comentário..."></textarea>
+                    <label>Data de Nascimento:</label>
+                    <input type="date" name="data_nascimento">
                 </div>
 
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </section>
+        <p><b>Qual modelo e Marca de veículos que gosta:</b></p>
+            <input type="checkbox" name="tipo" value="SUV"> SUV
+            <input type="checkbox" name="tipo" value="Sedan"> Sedan
+            <input type="checkbox" name="tipo" value="Esportivo"> Esportivo
+            <p>Possui veículo?</p>
+            <input type="radio" name="veiculo" value="Sim"> Sim
+            <input type="radio" name="veiculo" value="Não"> Não
+            <label>Marca favorita:</label>
+        <select>
+            <option>Toyota</option>
+            <option>Mercedes-Benz</option>
+            <option>BMW</option>
+                <option>Tesla</option>
+        </select>
+        <div class="form-group">
+            <label>Mensagem:</label>
+            <textarea name="mensagem"></textarea>
+        </div>
+        <button type="submit">Enviar Messagem
+        </button>
+    </form>
     </main>
-
     <footer>
         <p>Todos os direitos reservados.</p>
     </footer>
